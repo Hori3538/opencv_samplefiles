@@ -54,5 +54,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/8_4.out.dir/DependInfo.cmake"
   "CMakeFiles/2_3.out.dir/DependInfo.cmake"
   "CMakeFiles/2_2.out.dir/DependInfo.cmake"
+  "CMakeFiles/mask_rcnn.out.dir/DependInfo.cmake"
   "CMakeFiles/2_1.out.dir/DependInfo.cmake"
   )

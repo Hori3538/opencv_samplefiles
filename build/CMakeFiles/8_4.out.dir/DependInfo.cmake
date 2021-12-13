@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/horiike/source/pkg/samplefiles/8_4.cpp" "/home/horiike/source/pkg/samplefiles/build/CMakeFiles/8_4.out.dir/8_4.cpp.o"
+  "/home/amsl/opencv_samplefiles/8_4.cpp" "/home/amsl/opencv_samplefiles/build/CMakeFiles/8_4.out.dir/8_4.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

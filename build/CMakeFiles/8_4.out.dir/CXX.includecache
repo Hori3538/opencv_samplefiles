@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/horiike/source/pkg/samplefiles/8_4.cpp
+/home/amsl/opencv_samplefiles/8_4.cpp
 iostream
 -
 fstream

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/horiike/source/pkg/samplefiles/2_1.cpp
+/home/amsl/opencv_samplefiles/2_1.cpp
 iostream
 -
 opencv2/imgcodecs.hpp
