@@ -6,8 +6,18 @@ add_executable(2_2.out 2_2.cpp)
 add_executable(2_3.out 2_3.cpp)
 add_executable(8_4.out 8_4.cpp)
 add_executable(mask_rcnn.out mask_rcnn.cpp)
+add_executable(mouse_event.out mouse_event.cpp)
 target_link_libraries(2_1.out ${OpenCV_LIBS})
 target_link_libraries(2_2.out ${OpenCV_LIBS})
 target_link_libraries(2_3.out ${OpenCV_LIBS})
 target_link_libraries(8_4.out ${OpenCV_LIBS})
 target_link_libraries(mask_rcnn.out ${OpenCV_LIBS})
+target_link_libraries(mouse_event.out ${OpenCV_LIBS})
+
+MESSAGE(WARNING "prefix ${CMAKE_PREFIX_PATH}")    
+MESSAGE(WARNING "version ${OpenCV_VERSION}")
+MESSAGE(WARNING "install path ${OpenCV_INSTALL_PATH}") 
+MESSAGE(WARNING "config path ${OpenCV_CONFIG_PATH}") # look at the output of this message
+MESSAGE(WARNING "opencv path ${OpenCV_DIR}") # look at the output of this message
+MESSAGE(WARNING "include dirs ${OpenCV_INCLUDE_DIRS}")
+MESSAGE(WARNING "libs ${OpenCV_LIBS}")

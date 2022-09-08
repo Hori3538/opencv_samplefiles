@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/amsl/opencv_samplefiles/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -109,6 +109,19 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named mouse_event.out
+
+# Build rule for target.
+mouse_event.out: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mouse_event.out
+.PHONY : mouse_event.out
+
+# fast build rule for target.
+mouse_event.out/fast:
+	$(MAKE) -f CMakeFiles/mouse_event.out.dir/build.make CMakeFiles/mouse_event.out.dir/build
+.PHONY : mouse_event.out/fast
 
 #=============================================================================
 # Target rules for targets named 8_4.out
@@ -310,14 +323,42 @@ mask_rcnn.cpp.s:
 	$(MAKE) -f CMakeFiles/mask_rcnn.out.dir/build.make CMakeFiles/mask_rcnn.out.dir/mask_rcnn.cpp.s
 .PHONY : mask_rcnn.cpp.s
 
+mouse_event.o: mouse_event.cpp.o
+
+.PHONY : mouse_event.o
+
+# target to build an object file
+mouse_event.cpp.o:
+	$(MAKE) -f CMakeFiles/mouse_event.out.dir/build.make CMakeFiles/mouse_event.out.dir/mouse_event.cpp.o
+.PHONY : mouse_event.cpp.o
+
+mouse_event.i: mouse_event.cpp.i
+
+.PHONY : mouse_event.i
+
+# target to preprocess a source file
+mouse_event.cpp.i:
+	$(MAKE) -f CMakeFiles/mouse_event.out.dir/build.make CMakeFiles/mouse_event.out.dir/mouse_event.cpp.i
+.PHONY : mouse_event.cpp.i
+
+mouse_event.s: mouse_event.cpp.s
+
+.PHONY : mouse_event.s
+
+# target to generate assembly for a file
+mouse_event.cpp.s:
+	$(MAKE) -f CMakeFiles/mouse_event.out.dir/build.make CMakeFiles/mouse_event.out.dir/mouse_event.cpp.s
+.PHONY : mouse_event.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... rebuild_cache"
+	@echo "... mouse_event.out"
 	@echo "... 8_4.out"
 	@echo "... 2_3.out"
 	@echo "... 2_2.out"
@@ -338,6 +379,9 @@ help:
 	@echo "... mask_rcnn.o"
 	@echo "... mask_rcnn.i"
 	@echo "... mask_rcnn.s"
+	@echo "... mouse_event.o"
+	@echo "... mouse_event.i"
+	@echo "... mouse_event.s"
 .PHONY : help
 
 

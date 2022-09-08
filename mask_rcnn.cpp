@@ -27,6 +27,7 @@ std::vector<std::string> read_file(std::string filename, char delimiter='\n')
 }
 int main(int argc, char** argv)
 {
+    std::cout << "cv version: " << CV_VERSION << std::endl;
     std::string file = "../data/cars.mp4";
     if (argc > 1){
         file = argv[1];

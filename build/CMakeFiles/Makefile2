@@ -53,6 +53,7 @@ CMAKE_BINARY_DIR = /home/amsl/opencv_samplefiles/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/mouse_event.out.dir/all
 all: CMakeFiles/8_4.out.dir/all
 all: CMakeFiles/2_3.out.dir/all
 all: CMakeFiles/2_2.out.dir/all
@@ -67,6 +68,7 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/mouse_event.out.dir/clean
 clean: CMakeFiles/8_4.out.dir/clean
 clean: CMakeFiles/2_3.out.dir/clean
 clean: CMakeFiles/2_2.out.dir/clean
@@ -74,6 +76,33 @@ clean: CMakeFiles/mask_rcnn.out.dir/clean
 clean: CMakeFiles/2_1.out.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/mouse_event.out.dir
+
+# All Build rule for target.
+CMakeFiles/mouse_event.out.dir/all:
+	$(MAKE) -f CMakeFiles/mouse_event.out.dir/build.make CMakeFiles/mouse_event.out.dir/depend
+	$(MAKE) -f CMakeFiles/mouse_event.out.dir/build.make CMakeFiles/mouse_event.out.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/amsl/opencv_samplefiles/build/CMakeFiles --progress-num=11,12 "Built target mouse_event.out"
+.PHONY : CMakeFiles/mouse_event.out.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/mouse_event.out.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amsl/opencv_samplefiles/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/mouse_event.out.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amsl/opencv_samplefiles/build/CMakeFiles 0
+.PHONY : CMakeFiles/mouse_event.out.dir/rule
+
+# Convenience name for target.
+mouse_event.out: CMakeFiles/mouse_event.out.dir/rule
+
+.PHONY : mouse_event.out
+
+# clean rule for target.
+CMakeFiles/mouse_event.out.dir/clean:
+	$(MAKE) -f CMakeFiles/mouse_event.out.dir/build.make CMakeFiles/mouse_event.out.dir/clean
+.PHONY : CMakeFiles/mouse_event.out.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/8_4.out.dir
