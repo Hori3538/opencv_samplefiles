@@ -1,8 +1,0 @@
-/home/amsl/opencv_samplefiles/build/CMakeFiles/edit_cache.dir
-/home/amsl/opencv_samplefiles/build/CMakeFiles/rebuild_cache.dir
-/home/amsl/opencv_samplefiles/build/CMakeFiles/mouse_event.out.dir
-/home/amsl/opencv_samplefiles/build/CMakeFiles/8_4.out.dir
-/home/amsl/opencv_samplefiles/build/CMakeFiles/2_3.out.dir
-/home/amsl/opencv_samplefiles/build/CMakeFiles/2_2.out.dir
-/home/amsl/opencv_samplefiles/build/CMakeFiles/mask_rcnn.out.dir
-/home/amsl/opencv_samplefiles/build/CMakeFiles/2_1.out.dir
